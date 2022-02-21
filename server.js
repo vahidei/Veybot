@@ -16,7 +16,7 @@ const io = socketIO(server);
 io.on('connection', (socket) => {
   console.log('Client connected');
   socket.on('disconnect', () => console.log('Client disconnected'));
-  socket.on('send message', () => {
+  socket.on('sendMessage', () => {
     console.log('Message Received');
       io.emit('result', 'pm received');
   });
