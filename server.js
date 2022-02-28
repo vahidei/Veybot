@@ -18,7 +18,7 @@ io.on('connection', (socket) => {
   socket.on('disconnect', () => console.log('Client disconnected'));
   socket.on('sendMessage', () => {
     console.log('Message Received');
-      io.emit('result', 'pm received');
+      socket.emit('result', 'pm received');
   });
 });
 
