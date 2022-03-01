@@ -1,5 +1,6 @@
 const express = require('express');
 const socketIO = require('socket.io');
+require('./Autoload');
 
 const PORT = process.env.PORT || 3000;
 const INDEX = '/index.html';
@@ -18,7 +19,7 @@ io.on('connection', (socket) => {
   socket.on('disconnect', () => console.log('Client disconnected'));
   socket.on('sendMessage', () => {
     console.log('Message Received');
-      socket.emit('result', 'pm received');
+      socket.emit('result', moods.official);
   });
 });
 
