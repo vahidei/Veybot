@@ -18,13 +18,17 @@ const io = socketIO(server);
 let moods = new Moods();
 let analysis = new Analysis();
 
+let current_mood = 'official';
+
 io.on('connection', (socket) => {
 
   socket.on('message', message => {
 
       message = message.toLowerCase();
+      
+      let analyzed_answer = analysis.exec(message);
 
-      let answer = message + ' amoo';
+      let answer = message + ' amoo '+ JSON.stringify(analyzed_answer);
 
       socket.emit('message', answer);
 

@@ -4,31 +4,31 @@ module.exports = class Moods {
         
     }
 
-    official() {
+    official = () => {
         return 'amoo';
     }
 
-    kind() {
+    kind = () => {
+        
+    }
+
+    friendly = () => {
 
     }
 
-    friendly() {
+    depressed = () => {
 
     }
 
-    depressed() {
+    happy = () => {
 
     }
 
-    happy() {
+    angry = () => {
 
     }
 
-    angry() {
-
-    }
-
-    offensive() {
+    offensive = () => {
         
     }
 
