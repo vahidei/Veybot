@@ -1,7 +1,6 @@
 const express = require('express');
 const socketIO = require('socket.io');
-
-import Moods from './Classes/Moods';
+const Moods = require('./Classes/Moods');
 
 const PORT = process.env.PORT || 3000;
 const INDEX = '/index.html';
