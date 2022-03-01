@@ -1,3 +1,3 @@
-export class Analysis {
+module.exports = class Analysis {
 
 }
