@@ -1,7 +1,6 @@
 const express = require('express');
 const socketIO = require('socket.io');
 const Moods = require('./Classes/Moods');
-const Analysis = require('./Classes/Analysis');
 
 const PORT = process.env.PORT || 3000;
 const INDEX = '/index.html';
@@ -15,20 +14,14 @@ app.get('/', (req, res) => {
 
 const io = socketIO(server);
 
-let moods    = new Moods();
-//let analysis = new Analysis();
+let moods = new Moods();
 
 io.on('connection', (socket) => {
   console.log('Client connected');
   socket.on('disconnect', () => console.log('Client disconnected'));
-  socket.on('message', message => {
-    
-     // message = message.toLowerCase();
-
-      answer = message + ' ' + 'amoo';
-
-      socket.emit('message', answer);
-
+  socket.on('sendMessage', message => {
+    console.log('Message Received');
+      socket.emit('result', message +' '+ moods.official());
   });
 });
 
