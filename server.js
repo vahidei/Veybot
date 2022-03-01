@@ -25,6 +25,8 @@ io.on('connection', (socket) => {
     
       message = message.toLowerCase()
 
+      answer = message + ' ' + 'amoo'
+
       socket.emit('message', answer)
   })
 })
