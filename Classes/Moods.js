@@ -1,4 +1,4 @@
-export class Moods {
+export default class Moods {
 
     constructor() {
         
