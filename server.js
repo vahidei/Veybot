@@ -16,7 +16,7 @@ app.get('/', (req, res) => {
 const io = socketIO(server);
 
 let moods    = new Moods();
-let analysis = new Analysis();
+//let analysis = new Analysis();
 
 io.on('connection', (socket) => {
   console.log('Client connected');
@@ -28,6 +28,7 @@ io.on('connection', (socket) => {
       answer = message + ' ' + 'amoo';
 
       socket.emit('message', answer);
+
   });
 });
 
