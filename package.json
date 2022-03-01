@@ -4,16 +4,24 @@
   "engines": {
     "node": "12.x"
   },
-  "description": "",
+  "description": "This example accompanies the [Using WebSockets on Heroku with Node.js](https://devcenter.heroku.com/articles/node-websockets) tutorial.",
   "main": "index.js",
   "scripts": {
     "start": "node server.js"
   },
   "keywords": [],
-  "author": "",
+  "author": "Vahid Esmaeili",
   "license": "ISC",
   "dependencies": {
     "express": "^4.17.1",
     "socket.io": "^2.3.0"
-  }
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/vahidey/mybot.git"
+  },
+  "bugs": {
+    "url": "https://github.com/vahidey/mybot/issues"
+  },
+  "homepage": "https://github.com/vahidey/mybot#readme"
 }
