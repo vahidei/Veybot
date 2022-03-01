@@ -19,9 +19,9 @@ let moods = new Moods();
 io.on('connection', (socket) => {
   console.log('Client connected');
   socket.on('disconnect', () => console.log('Client disconnected'));
-  socket.on('sendMessage', () => {
+  socket.on('sendMessage', message => {
     console.log('Message Received');
-      socket.emit('result',moods.official());
+      socket.emit('result', message +' '+ moods.official());
   });
 });
 
