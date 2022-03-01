@@ -19,8 +19,7 @@ let moods    = new Moods()
 let analysis = new Analysis()
 
 io.on('connection', (socket) => {
-  console.log('Client connected')
-  socket.on('disconnect', () => console.log('Client disconnected'))
+  
   socket.on('message', message => {
     
       message = message.toLowerCase()
@@ -29,6 +28,7 @@ io.on('connection', (socket) => {
 
       socket.emit('message', answer)
   })
+  
 })
 
 
