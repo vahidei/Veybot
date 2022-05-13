@@ -1,0 +1,8 @@
+{
+    "creator|developer|developed|programmer|programmed|created": {
+        "your|ur|you": "@question:about_creator"
+    },
+
+    "bye|ok": "@question:bye"
+
+}

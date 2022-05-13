@@ -1,0 +1,12 @@
+{
+    "about_creator" : {
+        "question": "Would you like to know more about my Creator?",
+        "positive": "yes|ok",
+        "negative": "no|na",
+        "positive_content": "My creator is Vahid Esmaeili. Vahid is from Iran.",
+        "negative_content": "Ok! let's talking about otherthing."
+    }
+
+    
+
+}

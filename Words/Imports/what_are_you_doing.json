@@ -1,0 +1,5 @@
+{
+    "here": "@answer:im_here_to_answer_you",
+    "$END$": "@answer:idu",
+    "$THING$": "@answer:nothing"
+}

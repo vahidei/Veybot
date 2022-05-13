@@ -1,0 +1,68 @@
+{
+    "$END$": "@answer:what_what",
+    "$THING$": "@answer:idu",
+    "is": {
+        "the|th": {
+            "$END$": "@answer:what_is_what",
+            "$THING$": "@answer:what_is_the_thing/@wiki:$1"
+        },
+        "your|ur": {
+            "name": "@answer:my_name_is/_NAME_",
+            "gender": "@answer:i_have_not_gender",
+            "$END$": "@answer:what_is_my_what",
+            "$THING$": "@answer:idk"
+        },
+        "$THING$": "@answer:what_is_the_thing/@wiki:$1",
+        "$END$": "@answer:what_is_what"
+    },
+    "are": {
+        "you": {
+            "doing|doin": {
+                "$END$": "@answer:im_answering_you",
+                "$THING$": "@import:what_are_you_doing"
+            },
+            "talk|talkin|talking": {
+                "$END$": "@answer:about",
+                "about": "@answer:im_not_talking_about_anything"
+            },
+            "$END$": "@answer:im_a_robot"
+        },
+        "$THING$": "@answer:i_cant_answer_now",
+        "$END$": "@answer:what_are_what"
+    },
+    "do": {
+        "you": {
+            "do": "@answer:all_i_do_is_talk_to_you",
+            "want|wan": "@answer:what_do_i_want",
+            "talk|talkin|talking": "@answer:im_not_talking_about_anything",
+            "$END$": "@answer:"
+        }
+    },
+    "does": {
+        
+    },
+    "have": {
+        
+    },
+    "has": {
+        
+    },
+    "you":{
+
+    },
+    "he": {
+        
+    },
+    "she": {
+        
+    },
+    "day": {
+        
+    },
+    "month": {
+        
+    },
+    "year": {
+        
+    }
+}
