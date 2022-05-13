@@ -1,7 +1,4 @@
-# Node.js Socket.io Example
+# Veybot
 
-This example accompanies the
-[Using WebSockets on Heroku with Node.js](https://devcenter.heroku.com/articles/node-websockets)
-tutorial.
+Veybot is a chatbot application that can process messages sent by the user and then send a corresponding response using the review of stored data.
 
-[![Deploy](https://www.herokucdn.com/deploy/button.svg)](https://heroku.com/deploy)
