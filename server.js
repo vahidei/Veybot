@@ -21,8 +21,6 @@ const io = socketIO(server);
 
 let analysis = new Analysis();
 
-
-
 io.on('connection', (socket) => {
 
   sockets[socket.id] = socket;
@@ -37,7 +35,8 @@ io.on('connection', (socket) => {
       name: 'Dear user',
       country: false,
       job: false
-    }
+    },
+    data: {botName: "VeyBot"}
   };
 
   socket.emit('message',

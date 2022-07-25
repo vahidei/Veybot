@@ -6,8 +6,6 @@ module.exports = class Similar {
 
         this.similars = list;
 
-
-
         this.list = this.#extract(list);
 
     }
@@ -24,7 +22,6 @@ module.exports = class Similar {
         });
         return c;
     }
-
 
     check = (words, list = this.list) => {
 
@@ -56,7 +53,6 @@ module.exports = class Similar {
 
             return result;
         }
-
 
     }
 

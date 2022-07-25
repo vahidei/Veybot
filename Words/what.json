@@ -7,23 +7,28 @@
             "$THING$": "@answer:what_is_the_thing/@wiki:$1"
         },
         "your|ur": {
-            "name": "@answer:my_name_is/_NAME_",
+            "name": "@answer:my_name_is/@get:botName",
             "gender": "@answer:i_have_not_gender",
             "$END$": "@answer:what_is_my_what",
             "$THING$": "@answer:idk"
         },
+        "my": {
+            "name": "@answer:your_name_is/@get:userName|you_dont_tell_me_what_is_your_name",
+            "$THING$": "@answer:what_is_your_what",
+            "$END$": "@answer:what_is_your_what"
+        },
         "$THING$": "@answer:what_is_the_thing/@wiki:$1",
         "$END$": "@answer:what_is_what"
     },
-    "are": {
-        "you": {
+    "are|r": {
+        "you|u": {
             "doing|doin": {
                 "$END$": "@answer:im_answering_you",
                 "$THING$": "@import:what_are_you_doing"
             },
             "talk|talkin|talking": {
                 "$END$": "@answer:about",
-                "about": "@answer:im_not_talking_about_anything"
+                "about": "@answer:we_are_talking_about/@get:subject|im_not_talking_about_anything"
             },
             "$END$": "@answer:im_a_robot"
         },
@@ -31,12 +36,14 @@
         "$END$": "@answer:what_are_what"
     },
     "do": {
-        "you": {
+        "you|u": {
             "do": "@answer:all_i_do_is_talk_to_you",
             "want|wan": "@answer:what_do_i_want",
             "talk|talkin|talking": "@answer:im_not_talking_about_anything",
             "$END$": "@answer:"
-        }
+        },
+        "$THING$": "@answer:what_do_i",
+        "$END$": "@answer:what_do_i_what"
     },
     "does": {
         

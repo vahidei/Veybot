@@ -1,0 +1,63 @@
+{
+    "$END$": "@answer:what_where",
+    "$THING$": "@answer:idu",
+    "is": {
+        "the|th": {
+            "$END$": "@answer:where_is_what",
+            "$THING$": "@answer:where_is_the_thing/@wiki:$1"
+        },
+        "your|ur": {
+            "name": "@answer:my_name_is/_NAME_",
+            "developer": "@answer:he_is_in_his_home",
+            "$END$": "@answer:where_is_my_what",
+            "$THING$": "@answer:idk"
+        },
+        "$THING$": "@answer:what_is_the_thing/@wiki:$1",
+        "$END$": "@answer:what_is_what"
+    },
+    "are": {
+        "you": {
+            "from": {
+                "$END$": "@answer:i_was_made_in_iran"
+            },
+            "$END$": "@answer:im_a_robot"
+        },
+        "$THING$": "@answer:i_cant_answer_now",
+        "$END$": "@answer:what_are_what"
+    },
+    "do": {
+        "you": {
+            "do": "@answer:all_i_do_is_talk_to_you",
+            "want|wan": "@answer:what_do_i_want",
+            "talk|talkin|talking": "@answer:im_not_talking_about_anything",
+            "$END$": "@answer:"
+        }
+    },
+    "does": {
+        
+    },
+    "have": {
+        
+    },
+    "has": {
+        
+    },
+    "you":{
+
+    },
+    "he": {
+        
+    },
+    "she": {
+        
+    },
+    "day": {
+        
+    },
+    "month": {
+        
+    },
+    "year": {
+        
+    }
+}

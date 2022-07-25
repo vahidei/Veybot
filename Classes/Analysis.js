@@ -33,6 +33,7 @@ module.exports = class Analysis {
 
                     let dictionary = require(`../Words/${words[0]}.json`);
                     result += this.answer.make(
+                        original_message,
                         this.wordsCheck(words, dictionary),
                         user_id
                     );
@@ -66,18 +67,17 @@ module.exports = class Analysis {
                 });
                 orWords = c;
             }
-
+            
             let keyword = dictionary[words[char]];
 
             if (keyword == undefined) {
                 keyword = dictionary[orWords[words[char]]];
             }
-
+            
             if (keyword !== undefined) {
                 if (typeof keyword == 'object') {
                     return this.wordsCheck(words, keyword, char + 1);
                 } else {
-
                     return this.returnVal(words, keyword, char);
                 }
             } else {
@@ -117,7 +117,5 @@ module.exports = class Analysis {
     extractSentences = text => {
         return text.replace(/([.?!])\s*/g, "$1|").split("|");
     }
-
-
 
 }

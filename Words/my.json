@@ -1,0 +1,9 @@
+{
+    "$END$": "@answer:OK",
+    "name": {
+        "is": {
+            "$THING$": "@answer:ill_keep_in_mind/@set:userName=$3"
+        }
+    }
+    
+}
